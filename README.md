@@ -48,6 +48,8 @@ esac
 /sbin/e2fsck -yf /dev/sda1
 /sbin/resize2fs /dev/sda1 5G
 /sbin/e2fsck -yf /dev/sda1
+
+
 Теперь запустите update-initramfs, перезагрузите, проверьте размер, снова удалите эти скрипты и update-intiramfs.
 
 Для dracut (Fedora, CentOS) используйте ту же логику (/usr/lib/dracut/modules.d).
